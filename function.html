@@ -10,11 +10,21 @@
             function Hoverevent(){
                 document.write("hello world");
             }
+            function big(x){
+                x.style.hight = "500px";
+                x.style.width = "500px";
+            }
+            function small(x){
+                x.style.hight = "240px";
+                x.style.width = "240px";
+            }
         </script>
 
         <form >
             <input type="button" value="click me" onclick="clickevent()">
             <input type="button" value="hover" onmouseover="Hoverevent()">
+
+            <img src="github-mark.png" alt="" onmouseover="big(this)" onmouseleave="small(this)">
         </form>
     </body>
 </html>
